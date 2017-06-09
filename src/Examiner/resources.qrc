@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>pics/notOkRes.png</file>
+        <file>pics/okRes.jpg</file>
+        <file>pics/Policeman.png</file>
+        <file>pics/checked.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResultsForm</class>
+ <widget class="QDialog" name="ResultsForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>296</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(139,233,159);
+color: rgb(85, 13, 57);
+
+
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QRadioButton" name="studentButton">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Я учень</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="formLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="nickLabel">
+             <property name="text">
+              <string>Нікнейм:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="nickEdit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit:disabled{
+		background-color: rgb(186, 189, 182);
+}
+ QLineEdit:enabled{
+	
+	background-color: rgb(238, 238, 236);
+}
+
+*[valid=&quot;true&quot;]{
+background-color: white;
+border: 2px solid;
+border-color: green;
+}
+
+*[valid=&quot;false&quot;]{
+background-color: white;
+border: 2px solid;
+border-color: red;
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Введіть ваш нікнейм</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="passwordlabel">
+             <property name="text">
+              <string>Пароль:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="passwordEdit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit:disabled{
+		background-color: rgb(186, 189, 182);
+}
+ QLineEdit:enabled{
+	
+	background-color: rgb(238, 238, 236);
+}
+
+*[valid=&quot;true&quot;]{
+background-color: white;
+border: 2px solid;
+border-color: green;
+}
+
+*[valid=&quot;false&quot;]{
+background-color: white;
+border: 2px solid;
+border-color: red;
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Введіть ваш пароль</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QRadioButton" name="teacherButton">
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Я вчитель</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="passwordlabel_2">
+             <property name="text">
+              <string>Пароль:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="passwordEdit_2">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="font">
+              <font>
+               <strikeout>false</strikeout>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit:disabled{
+		background-color: rgb(186, 189, 182);
+}
+ QLineEdit:enabled{
+	
+	background-color: rgb(238, 238, 236);
+}
+
+*[valid=&quot;true&quot;]{
+background-color: white;
+border: 2px solid green;
+}
+
+*[valid=&quot;false&quot;]{
+background-color: white;
+border: 2px solid red;
+}
+
+*[default=&quot;true&quot;]{
+background-color: white;
+
+}</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Введіть пароль вчителя</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(204, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover{
+border-width: 0px;
+border-radius: 20%;
+}
+QPushButton {
+padding: 30px;
+border: 4px solid;
+	border-color: rgb(52, 101, 164);
+border-radius: 6px;
+	background-color: rgb(189, 214, 254);
+	color: rgb(9, 4, 32);
+padding: 10px;
+outline: none;
+}
+
+QPushButton:flat {
+border: none; 
+}
+
+QPushButton:default {
+border-color: navy; 
+}</string>
+       </property>
+       <property name="text">
+        <string>До головного меню</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="emptylabel">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="resultsButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton:hover{
+	border-width: 0px;
+	border-radius: 20%;
+}
+QPushButton {
+	border: 4px solid;
+	border-color: rgb(52, 101, 164);
+	border-radius: 6px;
+	background-color: rgb(189, 214, 254);
+	color: rgb(9, 4, 32);
+	padding: 10px;
+	outline: none;
+}
+
+QPushButton:flat {
+	border: none; 
+}
+
+QPushButton:default {
+border-color: rgb(92, 53, 102);
+}
+
+QPushButton:disabled{
+background-color: rgb(211, 215, 207);
+}</string>
+       </property>
+       <property name="text">
+        <string>Переглянути результати</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>backButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ResultsForm</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

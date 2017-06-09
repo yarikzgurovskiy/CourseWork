@@ -15,7 +15,7 @@ AboutWindow::AboutWindow(QWidget *parent) :
     ui->nameLabel->setTextInteractionFlags(Qt::TextBrowserInteraction);
     ui->nameLabel->setOpenExternalLinks(true);
 
-    ui->manualLabel->setText("<a href=\"https://github.com/yarikzgurovskiy/HTTP-Server\">"
+    ui->manualLabel->setText("<a href=\"https://github.com/yarikzgurovskiy/CourseWork\">"
                              "Мануал для користувача</a>");
     ui->manualLabel->setTextFormat(Qt::RichText);
     ui->manualLabel->setTextInteractionFlags(Qt::TextBrowserInteraction);
